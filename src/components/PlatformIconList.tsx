@@ -29,10 +29,12 @@ export const PlatformIconList = ({ platforms }: Props) => {
     web: BsGlobe,
   };
   return (
-    <HStack marginY={1}>
-      {platforms.map((platform) => (
-        <Icon as={iconMap[platform.slug]} color="gray.500"></Icon>
-      ))}
-    </HStack>
+    <>
+      <HStack marginY={1}>
+        {platforms.map((platform) => (
+          <Icon as={iconMap[platform.slug]} color="gray.500"></Icon>
+        ))}
+      </HStack>
+    </>
   );
 };
