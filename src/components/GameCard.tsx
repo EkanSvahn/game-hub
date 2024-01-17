@@ -14,8 +14,8 @@ export const GameCard = ({ game }: Props) => {
     <Card>
       <Image src={getCroppedImageUrl(game.background_image)}></Image>
       <CardBody>
-        <Heading fontSize="xl">{game.name}</Heading>
-        <HStack justifyContent="space-between">
+        <HStack justifyContent="space-between" marginBottom={3}>
+          <Heading fontSize="xl">{game.name}</Heading>
           <PlatformIconList
             platforms={game.parent_platforms.map(
               (platform) => platform.platform
