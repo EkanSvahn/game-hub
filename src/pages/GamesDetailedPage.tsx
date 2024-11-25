@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Game } from "../hooks/useGames";
+import { Game } from "../entities/Game";
 import useGame from "../hooks/useGame";
 import { Heading, Spinner, Text } from "@chakra-ui/react";
 
