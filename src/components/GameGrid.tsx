@@ -5,10 +5,8 @@ import useGames from "../hooks/useGames";
 import { GameCard } from "./GameCard";
 import { GameCardContainer } from "./GameCardContainer";
 import GameCardSkeleton from "./GameCardSkeleton";
-import useGameQueryStore from "../store";
 
 const GameGrid = () => {
-  
   const {
     data,
     error,
@@ -33,8 +31,8 @@ const GameGrid = () => {
     >
       <SimpleGrid
         columns={{ sm: 1, md: 2, lg: 3, xl: 4 }}
-        spacing={6}
-        padding="10"
+        spacing={2}
+        padding="10px"
       >
         {isLoading &&
           skeletons.map((skeleton) => (
