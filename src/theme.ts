@@ -10,9 +10,7 @@ const theme = extendTheme({
     global: (props: any) => ({
       body: {
         bg:
-          props.colorMode === "light"
-            ? "url(' / ')"
-            : "url('/src/assets/download.webp')",
+          props.colorMode === "light" ? "url(' / ')" : "url('/download.webp')",
         color: props.colorMode === "light" ? "gray.800" : "gray.50",
         bgRepeat: "no-repeat", // Prevent repetition
         bgSize: "cover", // Adjust scaling to fit the screen
