@@ -2,11 +2,28 @@ import { extendTheme, ThemeConfig } from "@chakra-ui/react";
 
 const config: ThemeConfig = {
   initialColorMode: "dark",
+  useSystemColorMode: false,
 };
-const theme = extendTheme({ config,
+const theme = extendTheme({
+  config,
+  styles: {
+    global: (props: any) => ({
+      body: {
+        bg:
+          props.colorMode === "light"
+            ? "url(' / ')"
+            : "url('/src/assets/bg_dark.png')",
+        color: props.colorMode === "light" ? "gray.800" : "gray.50",
+        bgRepeat: "no-repeat", // Prevent repetition
+        bgSize: "cover", // Adjust scaling to fit the screen
+        bgPosition: "center", // Keep the image centered
+        bgAttachment: "fixed", // Optional: Locks the background during scrolling
+      },
+    }),
+  },
   colors: {
     gray: {
-      50: '#f9f9f9',
+      50: "#f9f9f9",
       100: "#ededed",
       200: "#d3d3d3",
       300: "#b3b3b3",
@@ -15,9 +32,9 @@ const theme = extendTheme({ config,
       600: "#6c6c6c",
       700: "#202020",
       800: "#121212",
-      900: "#111"
-    }
-  } 
+      900: "#111",
+    },
+  },
 });
 
 export default theme;

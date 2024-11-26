@@ -27,7 +27,7 @@ export const GameCard = ({ game }: Props) => {
                 (platform) => platform.platform
               )}
             />
-            <CriticScore score={game.metacritic} />
+            <CriticScore score={game.metacritic} fontSize="14px" />
           </Link>
         </HStack>
       </CardBody>
