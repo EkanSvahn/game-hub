@@ -15,7 +15,7 @@ const ExpandableText = ({ children }: Props) => {
   return (
     <>
       <Box>
-        <Text noOfLines={isExpanded ? undefined : 6}>{children}</Text>
+        <Text noOfLines={isExpanded ? undefined : 3}>{children}</Text>
         <Button
           onClick={() => setIsExpanded((prev) => !prev)}
           mt={2}
