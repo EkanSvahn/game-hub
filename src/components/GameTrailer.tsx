@@ -1,5 +1,3 @@
-import React from "react";
-import { Game } from "../entities/Game";
 import useTrailers from "../hooks/useTrailers";
 import { Spinner } from "@chakra-ui/react";
 
