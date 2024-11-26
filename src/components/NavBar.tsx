@@ -1,8 +1,8 @@
-import { HStack, Image, Text } from "@chakra-ui/react";
-import logo from "../assets/fox.png";
+import { HStack, Image } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
+import logo from "src/assets/fox.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
-import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
