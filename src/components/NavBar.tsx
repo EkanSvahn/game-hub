@@ -1,6 +1,6 @@
 import { HStack, Image } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import logo from "src/assets/fox.png";
+import logo from "src/assets/Fox.png";
 import ColorModeSwitch from "./ColorModeSwitch";
 import SearchInput from "./SearchInput";
 
