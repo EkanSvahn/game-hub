@@ -12,7 +12,7 @@ const theme = extendTheme({
         bg:
           props.colorMode === "light"
             ? "url(' / ')"
-            : "url('/src/assets/bg_dark.png')",
+            : "url('/src/assets/download.webp')",
         color: props.colorMode === "light" ? "gray.800" : "gray.50",
         bgRepeat: "no-repeat", // Prevent repetition
         bgSize: "cover", // Adjust scaling to fit the screen
